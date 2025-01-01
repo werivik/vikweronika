@@ -239,6 +239,7 @@ main {
         background-color: white;
         height: 100%;
         min-height: 100vh;
+        padding-bottom: 150px;
         width: 80%;
         border-radius: 25px 25px 0px 0px;
     }
@@ -246,6 +247,8 @@ main {
 
 .websites {
     height: 100%;
+    width: 100%;
+    position: relative;
     padding-top: 25px;
     color: #12263a;
     border-radius: 50px;
@@ -270,17 +273,17 @@ main {
         justify-content: space-between;
         align-items: self-start;
         flex-wrap: wrap-reverse;
-        gap: 20px;
+        gap: 0px;
         width: 100%;
         padding-top: 100px;
         padding-bottom: 100px;
 
-        margin-left: 2.5;
-        margin-right: 2.5%;
+        margin-left: 1.5%;
+        margin-right: 3%;
     }
 
     .web-text {
-        width: 31%;
+        width: 33%;
         min-width: 325px;
         margin-right: 20px;
         display: flex;
@@ -428,8 +431,7 @@ main {
                         color: #12263a;
 
                         &:hover {
-                            transition: 0.25s;
-                            transform: scale(1.15);
+                            transition: 0.2s;
                             cursor: pointer;
                             color: #d36582;
                         }
@@ -587,8 +589,9 @@ main {
                 box-shadow: 1px 1px 10px 1px rgba(4, 3, 35, 0.189);
 
                 &:hover {
-                    transition: 0.25s;
-                    transform: scale(1.15);
+                    transition: 0.2s;
+                    cursor: pointer;
+                    color: #d36582;
                 }
             }
         }
