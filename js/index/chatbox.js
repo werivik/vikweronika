@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
     setTimeout(() => {
         chatbox1.classList.add("move-up");
         loader.style.display = "block";
-    }, 2500);
+    }, 2700);
 
     setTimeout(() => {
         chatbox2.style.display = "block";
