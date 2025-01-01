@@ -1,0 +1,9 @@
+footer {
+    background-color: #12263a;
+    height: 400px;
+    margin-top: 110%;
+    z-index: 3;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+}
