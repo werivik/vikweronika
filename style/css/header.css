@@ -21,7 +21,8 @@ header {
         justify-content: space-between;
 
         a {
-            color: black;
+            color: #12263a;
+            mix-blend-mode: difference;
             text-decoration: none;
             font-size: 18px;
         }

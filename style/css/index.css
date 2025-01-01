@@ -57,6 +57,7 @@ main {
         display: flex;
         flex-direction: column;
         gap: 20px;
+        color: #12263a;
 
         .chat-text {
             background-color: white;
@@ -88,7 +89,7 @@ main {
                 .link1, .link2, .link3 {
                     text-decoration: none;
                     font-size: 18px;
-                    color: black;
+                    color: #12263a;
                     white-space: nowrap;
                     overflow: hidden;
                     width: fit-content;
@@ -118,8 +119,8 @@ main {
                 overflow: hidden;
                 width: fit-content;
                 opacity: 0;    
-                animation: typing 3s ease forwards, textFade 0s linear forwards 2s;
-                animation-delay: 6s;
+                animation: typing 1.5s ease forwards, textFade 0s linear forwards 2s;
+                animation-delay: 4.5s;
             }
         }
 
@@ -164,6 +165,66 @@ main {
     }
     to {
         opacity: 100%;
+    }
+}
+
+.category-section {
+    width: 100%;
+    height: 100%;
+    min-height: 275px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+
+    .category-border {
+        width: 80%;
+        height: 100%;
+        min-height: 275px;
+        background-color: white;
+        border-radius: 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h3 {
+        font-size: 25px;
+        font-family: "Ahganirya";
+        color: #12263a;
+    }
+
+    .categories {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        a {
+            font-size: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            color: #12263a;
+            margin-top: 30px;
+
+            i {
+                margin: 0;
+            }
+
+            &:hover {
+                transition: 0.2s;
+                color: #d36582;
+                margin-top: 25px;
+
+                i {
+                    margin-bottom: 5px;
+                    transition: 0.2s;
+                    color: #d36582;
+                }
+            }
+        }
     }
 }
 
