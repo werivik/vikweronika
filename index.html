@@ -15,6 +15,8 @@
 
 <body>
 
+    <script src="/js/index/chatbox.js" defer></script>
+
     <main>
         <section class="top-section">
 
@@ -25,11 +27,12 @@
                     <div class="me-chatbox">
                         <img src="/style/media/me/me-17.jpg" alt="">
                         <div class="chatboxes">
-                            <div class="chat-text">
+                            <div class="chat-text" id="chatbox1">
                                 <p>Hello! I am Weronika Vik, Frontend Developer.</p>
                             </div>
-                            <div class="chat-text">
-                                <p>What would you like to see?</p>
+                            <div class="loader" id="loader"></div>
+                            <div class="chat-text" id="chatbox2">
+                                <p>What would you like to learn more about?</p>
                                 <li>
                                     <a href="">My Projetcs</a>
                                     <a href="">About Me</a>
