@@ -302,6 +302,11 @@ main {
                     color: #12263a;
                     text-decoration: none;
                     border-bottom: solid #12263a 1px;
+                    &:hover {
+                        transition: 0.2s;
+                        color: #d36582;
+                        border-bottom: #d36582 solid 1px;
+                    }
                 }
             }
 
