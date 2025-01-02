@@ -1,29 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap');
 
 body {
-    top: 0;
-    left: 0;
-    padding: 0;
-    margin: 0;
-    position: relative;  
-    background-color: #f3f7f8;
-    overflow-x: hidden;
+    background-color: #F3F3F3;
     overflow-y: scroll;
-
-    font-family: "Rethink Sans", serif;
-    font-style: normal;
     height: 100%;
+    color: #12263a;
 }
 
 main {
-    position: relative;
-    margin: 0;
-    top: 0;
-    height: 100%;
-    color: #12263a;
-    padding-bottom: 200px;
     display: flex;
     flex-direction: column;
+    width: 100%;
     align-items: center;
 }
 
@@ -34,102 +21,9 @@ h1 {
     margin-top: 150px;
 }
 
-.slideshow-sec {
-    width: 75.5%;
-    height: 100vh;
-    position: relative;
-
-    .slideshow-column {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        position: relative;
-        width: 100%;
-        height: 100%;
-    }
-
-    .slideshow-background {
-        position: relative;
-        background-color: white;
-        height: 100%;
-        min-height: 450px;
-        width: 27.5%;
-        padding: 20px;
-        border-radius: 50px;
-    }
-
-    .slideshow-content {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        width: 100%;
-        height: 100%;
-        text-decoration: none;
-        position: relative;
-
-        .categories {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-            text-decoration: none;
-            color: #12263a;
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            i {
-                font-size: 25px;
-                color: #12263a;
-            }
-        }
-
-        .image {
-            width: 90%;
-            height: 75%;
-
-            img {
-                width: 100%;
-                height: 100%;
-                object-fit: contain;
-            }
-        }
-    }
-
-    .arrows {
-        color: #12263a;
-
-        .arrow-left, .arrow-right {
-            position: absolute;
-            height: 50px;
-            width: 50px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: white;
-            border-radius: 100px;
-
-            i {
-                font-size: 25px;
-            }
-        }
-
-        .arrow-left {
-            right: 102.5%;
-            top: 50%;
-        }
-
-        .arrow-right {
-            left: 102.5%;
-            top: 50%;
-        }
-    }
-}
-
 .overview-skills {
     display: flex;
-    width: 73%;
+    width: 77%;
     flex-direction: row;
     justify-content: center;
     gap: 47px;
@@ -164,7 +58,7 @@ h1 {
 
 .white-background {
     background-color: white;
-    width: 70%;
+    width: 75%;
     margin-top: 100px;
     border-radius: 50px;
     height: 100%;
@@ -256,7 +150,6 @@ h1 {
 
 .contact-me-content {
     position: relative;
-    height: 500px;
     width: 100%;
     margin-top: 100px;
 }
@@ -278,16 +171,16 @@ h1 {
         justify-content: center;
 
         a {
-            color: white;
+            color: #12263a;
             text-decoration: none;
-            background-color: #d36582;
-            padding: 10px 20px 10px 20px;
+            background-color: #F6A5A5;
+            padding: 10px 25px 10px 25px;
             border-radius: 50px;
             font-size: 45px;
             position: absolute;
 
             &:hover {
-                background-color: #386fce;
+                color: white;
                 transition: 0.2s;
                 box-shadow: 1px 1px 10px 1px rgba(4, 3, 35, 0.382);
             }
