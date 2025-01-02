@@ -241,7 +241,7 @@ main {
         min-height: 100vh;
         padding-bottom: 150px;
         width: 80%;
-        border-radius: 25px 25px 0px 0px;
+        border-radius: 25px;
     }
 }
 
@@ -284,8 +284,8 @@ main {
 
     .web-text {
         width: 33%;
-        min-width: 325px;
-        margin-right: 20px;
+        min-width: 315px;
+        margin-right: 25px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
