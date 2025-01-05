@@ -1,12 +1,10 @@
 const aboutMeImageContainer = document.querySelector('.aboutme-image');
 const imageSources = [
-    "/style/media/me/womanincity.jpeg",
-    "/style/media/me/womananddog.jpeg",
-    "/style/media/me/womanbydesk.jpeg"
+    "/style/media/me/meblackandgrey.png",
+    "/style/media/me/meblackandgrey.png",
+    "/style/media/me/meblackandgrey.png"
 ];
 let currentIndex = 0;
-let slideshowInterval;
-let isSlideshowRunning = true;
 
 function changeImage() {
     const newImage = document.createElement('img');
@@ -30,37 +28,7 @@ function changeImage() {
         const currentImage = aboutMeImageContainer.querySelector('img:first-child');
         aboutMeImageContainer.removeChild(currentImage);
         currentIndex = (currentIndex + 1) % imageSources.length;
-    }, 1000);
+    }, 3000);
 }
 
-function startSlideshow() {
-    if (!isSlideshowRunning) {
-        isSlideshowRunning = true;
-        slideshowInterval = setInterval(changeImage, 8000);
-    }
-}
-
-function stopSlideshow() {
-    if (isSlideshowRunning) {
-        isSlideshowRunning = false;
-        clearInterval(slideshowInterval);
-    }
-}
-
-function handleScroll() {
-    const scrollPosition = window.scrollY || window.pageYOffset;
-    const viewportHeight = window.innerHeight;
-
-    if (scrollPosition > 0.85 * viewportHeight) {
-        stopSlideshow();
-    } 
-    
-    else {
-        startSlideshow();
-    }
-}
-
-document.addEventListener('DOMContentLoaded', () => {
-    startSlideshow();
-    window.addEventListener('scroll', handleScroll);
-});
+setInterval(changeImage, 10000);
