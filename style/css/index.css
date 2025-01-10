@@ -183,7 +183,6 @@ main {
 
     h3 {
         font-size: 25px;
-        font-family: "Ahganirya";
         color: #12263a;
     }
 
@@ -289,7 +288,6 @@ main {
                 font-size: clamp(15px, calc(2.5vw + 0.9vh), 25px);          
                 margin: 0;
                 padding: 0;
-                font-family: "Ahganirya";
 
                 a {
                     color: #12263a;

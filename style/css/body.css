@@ -7,6 +7,10 @@ body {
     height: 100%;
 }
 
+h1, h2, h3, h4 {
+    font-family: "Ahganirya";
+}
+
 #pageContent {
     transition: filter 0.3s ease;
 }
