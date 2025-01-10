@@ -17,3 +17,43 @@ function adjustHeaderFontColor() {
 }
 
 document.addEventListener("DOMContentLoaded", adjustHeaderFontColor);
+
+const menuBar = document.getElementById('menuBar');
+const menuBarHover = document.getElementById('menuBarHover');
+const menuClose = document.getElementById('menuClose');
+const menuLinks = document.getElementById('menuLinks');
+
+menuLinks.style.display = 'none';
+menuClose.style.display = 'none';
+
+menuBar.addEventListener('mouseenter', () => {
+    if (menuLinks.style.display === 'none') {
+        menuBar.style.display = 'none';
+        menuBarHover.style.display = 'flex';
+    }
+});
+
+menuBarHover.addEventListener('mouseleave', () => {
+    if (menuLinks.style.display === 'none') {
+        menuBar.style.display = 'flex';
+        menuBarHover.style.display = 'none';
+    }
+});
+
+menuBar.addEventListener('click', toggleMenuLinks);
+menuBarHover.addEventListener('click', toggleMenuLinks);
+menuClose.addEventListener('click', toggleMenuLinks);
+
+function toggleMenuLinks() {
+    if (menuLinks.style.display === 'none') {
+        menuLinks.style.display = 'flex';
+        menuBar.style.display = 'none';
+        menuBarHover.style.display = 'none';
+        menuClose.style.display = 'flex';
+    } 
+    else {
+        menuLinks.style.display = 'none';
+        menuClose.style.display = 'none';
+        menuBar.style.display = 'flex';
+    }
+}
