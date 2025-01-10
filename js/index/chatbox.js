@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
         loader.style.display = "none";
         chatbox1.style.transform = "translateY(-0px)";
         chatBobbles.style.top = "25%";
-        profile.style.top = "55%";
+        profile.style.top = "63.5%";
     }, 4500);
 });
 
