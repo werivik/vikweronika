@@ -561,7 +561,7 @@ main {
 
     .arrows {
         position: absolute;
-        width: 95%;
+        width: 96.5%;
         top: 47%;
         display: flex;
         flex-direction: row;
@@ -683,5 +683,16 @@ main {
             }
         }
     
+    }
+
+    .zoomed-image-container {
+    
+        img {
+            max-width: 80%;
+        }
+    
+        .arrows {
+            width: 98%;
+        }
     }
 }
