@@ -17,7 +17,7 @@ main {
 
 .top-border {
     width: 50%;
-    height: 50%;
+    height: 100%;
     position: absolute;
     display: flex;
     align-items: center;
@@ -25,6 +25,7 @@ main {
 }
 
 .chatbox-section {
+    margin-top: 35%;
     display: flex;
     flex-direction: row;
     gap: 2.5%;
@@ -43,27 +44,26 @@ main {
 
     .chatbobbles {
         display: flex;
-        width: 75%;
         flex-direction: column;
+        font-size: 20px;
+        width: 85%;
+        min-width: 350px;
         gap: 20px;
         color: #12263a;
 
         .chat-text {
+            margin-bottom: 20px;
+            max-width: 80%;
+            width: fit-content;
             background-color: white;
-            position: relative;
+            word-break: break-word;
             transition: all 1s ease;
             padding: 5px;
             border-radius: 15px 15px 15px 0px;
-            width: 100%;
             animation: typing 2s steps(60, end);
     
             p {
-                font-size: 20px;
                 padding: 5px;
-                white-space: nowrap;
-                overflow: hidden;
-                width: fit-content;
-                animation: typing 2s steps(60, end);
             }
     
             li {
@@ -103,7 +103,6 @@ main {
             }
 
             .bottom-text {
-                white-space: nowrap;
                 overflow: hidden;
                 width: fit-content;
                 opacity: 0;    
@@ -144,7 +143,6 @@ main {
     }
     to {
         width: 100%; 
-        white-space: wrap;
     }
 }
 
@@ -154,7 +152,6 @@ main {
     }
     to {
         opacity: 100%;
-        white-space: wrap;
     }
 }
 

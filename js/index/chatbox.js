@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
         chatbox1.style.transform = "translateY(-0px)";
         chatBobbles.style.top = "25%";
         profile.style.marginTop = "32%";
-        chatBoxes.style.height = "100%";
+        chatBoxes.style.marginTop = "0%";
     }, 4500);
 });
 
