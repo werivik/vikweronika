@@ -30,7 +30,6 @@ main {
     gap: 2.5%;
     position: relative;
     width: 100%;
-    height: 100%;
 
     .profilepic {
         width: 100px;
@@ -56,7 +55,7 @@ main {
             padding: 5px;
             border-radius: 15px 15px 15px 0px;
             width: 100%;
-            animation: typing 1.5s steps(60, end);
+            animation: typing 2s steps(60, end);
     
             p {
                 font-size: 20px;
@@ -64,7 +63,7 @@ main {
                 white-space: nowrap;
                 overflow: hidden;
                 width: fit-content;
-                animation: typing 1.5s steps(60, end);
+                animation: typing 2s steps(60, end);
             }
     
             li {
@@ -108,7 +107,7 @@ main {
                 overflow: hidden;
                 width: fit-content;
                 opacity: 0;    
-                animation: typing 1.5s ease forwards, textFade 0s linear forwards 2s;
+                animation: typing 2s ease forwards, textFade 0s linear forwards 2s;
                 animation-delay: 4.5s;
             }
         }
@@ -145,6 +144,7 @@ main {
     }
     to {
         width: 100%; 
+        white-space: wrap;
     }
 }
 
@@ -154,6 +154,7 @@ main {
     }
     to {
         opacity: 100%;
+        white-space: wrap;
     }
 }
 
