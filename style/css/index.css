@@ -624,3 +624,64 @@ main {
 
     }
 }
+
+@media screen and (max-width: 850px) {
+    .category-section {
+        .category-border {
+            width: 100%;
+        }
+
+        .categories {
+            h3 {
+                font-size: 20px;
+            }
+            a {
+                font-size: 16px;
+            }
+        }
+    }
+
+    .bottom-section {    
+        .bottom-border {
+            padding-bottom: 50px;
+            width: 100%;
+        }
+    }
+
+    .websites {
+        width: 100%;
+        .web1, .web3, .web5 {
+            flex-direction: column;
+            width: 95%;    
+            margin-right: 2.5%;
+            margin-left: 2.5%;
+        }
+
+        .web2, .web4 {
+            flex-direction: column-reverse;
+            flex-wrap: wrap;
+            gap: 20px;
+            width: 95%;
+            padding-top: 25px;
+            padding-bottom: 25px;
+    
+            margin-right: 2.5%;
+            margin-left: 2.5%;
+        }
+    
+        .web-text {
+            width: 95%;  
+            margin-left: 3%;
+        }
+    
+        .slideshow-elements {
+    
+            width: 100%;
+    
+            .slideshow-main {
+                width: 90%;    
+            }
+        }
+    
+    }
+}
