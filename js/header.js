@@ -22,38 +22,47 @@ const menuBar = document.getElementById('menuBar');
 const menuBarHover = document.getElementById('menuBarHover');
 const menuClose = document.getElementById('menuClose');
 const menuLinks = document.getElementById('menuLinks');
+const pageContent = document.getElementById('pageContent');
 
-menuLinks.style.display = 'none';
 menuClose.style.display = 'none';
 
 menuBar.addEventListener('mouseenter', () => {
-    if (menuLinks.style.display === 'none') {
+    if (menuClose.style.display === 'none') {
         menuBar.style.display = 'none';
         menuBarHover.style.display = 'flex';
     }
 });
 
 menuBarHover.addEventListener('mouseleave', () => {
-    if (menuLinks.style.display === 'none') {
+    if (menuClose.style.display === 'none') {
         menuBar.style.display = 'flex';
         menuBarHover.style.display = 'none';
     }
 });
 
-menuBar.addEventListener('click', toggleMenuLinks);
-menuBarHover.addEventListener('click', toggleMenuLinks);
-menuClose.addEventListener('click', toggleMenuLinks);
+menuBar.addEventListener('click', () => toggleMenuLinks('open'));
+menuBarHover.addEventListener('click', () => toggleMenuLinks('open'));
+menuClose.addEventListener('click', () => toggleMenuLinks('close'));
 
-function toggleMenuLinks() {
-    if (menuLinks.style.display === 'none') {
-        menuLinks.style.display = 'flex';
+function toggleMenuLinks(action) {
+    if (action === 'open') {
+        menuLinks.classList.add('slide-in');
+        menuLinks.classList.remove('slide-out');
+        menuClose.style.display = 'flex';
         menuBar.style.display = 'none';
         menuBarHover.style.display = 'none';
-        menuClose.style.display = 'flex';
+        pageContent.classList.add('blurred');
     } 
-    else {
-        menuLinks.style.display = 'none';
-        menuClose.style.display = 'none';
-        menuBar.style.display = 'flex';
+    
+    else if (action === 'close') {
+        menuLinks.classList.add('slide-out');
+        menuLinks.classList.remove('slide-in');
+        setTimeout(() => {
+            menuClose.style.display = 'none';
+            menuBar.style.display = 'flex';
+            menuBarHover.style.display = 'none';
+            pageContent.classList.remove('blurred');
+        }, 500);
     }
 }
+

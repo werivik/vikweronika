@@ -131,7 +131,8 @@ header {
                     top: 0;
                     gap: 45px;
                     margin-top: -15px;
-                    transition: 0.5s;
+                    transform: translateX(0);
+                    transition: transform 0.5s ease;
 
                     .top-link {
                         margin-top: 150px;
@@ -141,6 +142,14 @@ header {
                         font-size: 22px;
                         margin-left: 25px;
                     }
+                }
+
+                .responsive-links.slide-in {
+                    transform: translateX(-100%);
+                }
+                
+                .responsive-links.slide-out {
+                    transform: translateX(0);
                 }
             }
         }
