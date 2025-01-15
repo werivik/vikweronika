@@ -235,7 +235,7 @@ main {
         a {
             color: #12263a;
             text-decoration: none;
-            background-color: #F6A5A5;
+            background-color: #FFC0CD;
             padding: 5px 20px 5px 20px;
             border-radius: 50px;
             font-size: 20px;
@@ -246,6 +246,7 @@ main {
                 transition: 0.2s;
                 color: white;
                 transition: 0.2s;
+                background-color: #E4879A;
             }
         }
 
