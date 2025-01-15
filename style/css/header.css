@@ -56,7 +56,7 @@ header {
 
                     &:hover {
                         transition: 0.2s;
-                        text-decoration: underline;
+                        color: #F6A5A5;
                     }
                 }
             }

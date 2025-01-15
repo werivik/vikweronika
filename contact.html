@@ -19,7 +19,7 @@
 <body>
 
     <script src="/js/header.js" defer></script>
-    <script src="/js/about/slideshow.js" defer></script>
+    <script src="/js/contact/contact-form.js" defer></script>
 
     <main id="mainContact">
 
@@ -42,29 +42,40 @@
 
         <section class="top-section">
             <div class="top-border">
-                <div class="me-image">
-                    <img src="/style/media/me/sideprofile.jpg" alt="">
-                </div>
-
+                <h1>Contact Me</h1>
                 <div class="contact-content">
-                    <h1>Contact Me</h1>
-                    <p>If you want to reach out to me, please fillout the contact-form below.</p>
+                    <span>If you want to reach me, please fillout the contact form below or contact me through my sosials.</span>
                     
                     <form action="" class="contact-form">
-                        <label for="fname">Email</label>
-                        <input type="text" id="fname" name="firstname" placeholder="Your email...">
+                        <div class="email-input">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" placeholder="Your email adress..." required>
+                        </div>
                     
-                        <label for="subject">Subject</label>
-                        <textarea id="subject" name="subject" placeholder="Write here..." style="height:200px"></textarea>
+                        <div class="subject-input">
+                            <label for="subject">Your Message:</label>
+                            <textarea id="subject" name="subject" placeholder="Write here..." style="height:200px" required>
+                            </textarea>
+                        </div>
                     
-                        <input type="submit" value="Submit">
+                        <button class="submit-button" id="submitEmail">
+                            Send
+                        </button>
+
+                        <div id="errorMessage" style="color: red; display: none;">Please enter a valid Email and Message!</div>
+                        <div id="successMessage" style="color: green; display: none;">Message sent successfully!</div>
+
                     </form>
 
-                    <p>Having troubles or simply don't want to? You can contact me by my email or my sosials!</p>
-                    <p>Email: </p>
-                    <p>Linkedln: </p>
-                    <p>Facebook: </p>
-                    <p>Messenger: </p>
+                    <div class="extra-info">
+                        <span>Having troubles? You can contact me by my email or my sosials!</span>
+                        <p>Email: <a href="mailto:vikweronika@gmail.com">vikweronika@gmail.com</a></p>
+                        <p>Linkedln: <a href="https://www.linkedin.com/in/weronika-vik-0844022a6/">Weronika Vik</a></p>
+                        <p>Messenger: <a href=""></a> Weronika Vik</p>
+                    </div>
+
+                    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
                 </div>
             </div>
         </section>
