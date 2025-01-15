@@ -1,6 +1,6 @@
-emailjs.init('');
+document.getElementById('submitEmail').addEventListener('click', async function (e) {
+    e.preventDefault();
 
-document.getElementsById('submitEmail').addEventListener('click', function() {
     const emailInput = document.getElementById('email');
     const subjectInput = document.getElementById('subject');
     const errorMessage = document.getElementById('errorMessage');
@@ -12,7 +12,7 @@ document.getElementsById('submitEmail').addEventListener('click', function() {
     subjectInput.style.backgroundColor = '';
 
     const email = emailInput.value.trim();
-    const message = emailInput.value.trim();
+    const message = subjectInput.value.trim();
 
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(email) || message === '') {
@@ -22,20 +22,21 @@ document.getElementsById('submitEmail').addEventListener('click', function() {
         return;
     }
 
-    const templateParams = {
-        email: email,
-        message: message
+    const formData = {
+        to_name: 'Your Name',
+        from_email: email,
+        message: message,
     };
 
-    emailjs.send('', '', templateParams)
-    .then(() => {
+    try {
+        const response = await axios.post('http://localhost:3000/send-email', formData);
         successMessage.style.display = 'block';
         emailInput.value = '';
         subjectInput.value = '';
-    })
-
-    .catch(() => {
+    } 
+    
+    catch (error) {
         errorMessage.textContent = 'Failed to send Message, please try again.';
         errorMessage.style.display = 'block';
-    });
+    }
 });
