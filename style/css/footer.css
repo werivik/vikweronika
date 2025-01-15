@@ -23,6 +23,11 @@ footer {
                 font-size: 30px;
                 color: #12263a;
 
+                img {
+                    width: 30px;
+                    height: 30px;
+                }
+
                 &:hover {
                     transition: 0.2s;
                     color: #d36582;

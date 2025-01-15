@@ -201,7 +201,10 @@ main {
             color: #12263a;
             margin-top: 30px;
 
-            i {
+            img {
+                width: 25px;
+                height: 25px;
+                object-fit: contain;
                 margin: 0;
             }
 
@@ -210,10 +213,9 @@ main {
                 color: #E4879A;
                 margin-top: 25px;
 
-                i {
+                img {
                     margin-bottom: 5px;
                     transition: 0.2s;
-                    color: #E4879A;
                 }
             }
         }
@@ -335,6 +337,12 @@ main {
                     word-break: break-all;
 
                     i {
+                        margin-right: 7.5px;
+                    }
+
+                    img {
+                        width: 15px;
+                        height: 15px;
                         margin-right: 7.5px;
                     }
                 }
