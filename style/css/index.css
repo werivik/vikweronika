@@ -79,8 +79,8 @@ main {
                 .link1, .link2, .link3 {
                     text-decoration: none;
                     font-size: 18px;
-                    color: #E4879A;
                     white-space: nowrap;
+                    color: #12263a;
                     overflow: hidden;
                     width: fit-content;
                     opacity: 0;    
@@ -89,6 +89,7 @@ main {
                     &:hover {
                         margin-left: 5px;
                         transition: 0.2s;
+                        color: #E4879A;
                     }
                 }
 
@@ -261,7 +262,7 @@ main {
         align-items: self-start;
         flex-wrap: wrap-reverse;
         gap: 0px;
-        width: 100%;
+        width: 96%;
         padding-top: 100px;
         padding-bottom: 100px;
 
@@ -339,7 +340,7 @@ main {
 
     .slideshow-elements {
 
-        width: 62.5%;
+        width: 60%;
         height: 100%;
         margin: 0;
         padding: 0;

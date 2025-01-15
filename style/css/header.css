@@ -12,6 +12,7 @@ header {
     z-index: 999;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
+    color: #12263a;
 
     .header-border {
         width: 80%;
