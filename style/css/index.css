@@ -78,7 +78,7 @@ main {
                 .link1, .link2, .link3 {
                     text-decoration: none;
                     font-size: 18px;
-                    color: #d36582;
+                    color: #E4879A;
                     white-space: nowrap;
                     overflow: hidden;
                     width: fit-content;
@@ -122,7 +122,7 @@ main {
     margin-top: 50px;
     width: 50px;
     aspect-ratio: 2;
-    --_g: no-repeat radial-gradient(circle closest-side,#F6A5A5 90%,#0000);
+    --_g: no-repeat radial-gradient(circle closest-side,#E4879A 90%,#0000);
     background: 
       var(--_g) 0%   50%,
       var(--_g) 50%  50%,
@@ -201,13 +201,13 @@ main {
 
             &:hover {
                 transition: 0.2s;
-                color: #d36582;
+                color: #E4879A;
                 margin-top: 25px;
 
                 i {
                     margin-bottom: 5px;
                     transition: 0.2s;
-                    color: #d36582;
+                    color: #E4879A;
                 }
             }
         }

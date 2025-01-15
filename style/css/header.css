@@ -40,7 +40,7 @@ header {
                     transition: 0.2s;
                     span {
                         transition: 0.2s;
-                        color: #F6A5A5;
+                        color: #E4879A;
                     }
                 }
             }
@@ -56,7 +56,7 @@ header {
 
                     &:hover {
                         transition: 0.2s;
-                        color: #F6A5A5;
+                        color: #E4879A;
                     }
                 }
             }
@@ -65,12 +65,13 @@ header {
         .right-side {
             a {
                 padding: 10px 15px 10px 15px;
-                background-color: #F6A5A5;
+                background-color: #FFC0CD;
                 font-weight: 600;
                 border-radius: 25px;
                 &:hover {
                     transition: 0.2s;
                     color: white;
+                    background-color: #E4879A;
                 }
             }
         }
