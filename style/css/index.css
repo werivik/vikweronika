@@ -50,17 +50,18 @@ main {
         min-width: 350px;
         gap: 20px;
         color: #12263a;
+        word-wrap: nowrap;
+        word-break: normal;
 
         .chat-text {
             margin-bottom: 20px;
             max-width: 80%;
-            width: fit-content;
             background-color: white;
-            word-break: break-word;
             transition: all 1s ease;
             padding: 5px;
             border-radius: 15px 15px 15px 0px;
             animation: typing 2s steps(60, end);
+            word-wrap: nowrap;
     
             p {
                 padding: 5px;
