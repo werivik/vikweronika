@@ -1,8 +1,8 @@
 const aboutMeImageContainer = document.querySelector('.aboutme-image');
 const imageSources = [
+    "/style/media/me/purple-me.png",
     "/style/media/me/meblackandgrey.png",
-    "/style/media/me/meblackandgrey.png",
-    "/style/media/me/meblackandgrey.png"
+    "/style/media/me/purple-me.png"
 ];
 let currentIndex = 0;
 
@@ -31,4 +31,4 @@ function changeImage() {
     }, 3000);
 }
 
-setInterval(changeImage, 10000);
+setInterval(changeImage, 7500);
