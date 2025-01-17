@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
         loader.style.display = "none";
         chatbox1.style.transform = "translateY(-0px)";
         chatBobbles.style.top = "25%";
-        profile.style.marginTop = "32%";
+        profile.style.marginTop = "16%";
         chatBoxes.style.marginTop = "0%";
     }, 4500);
 });
