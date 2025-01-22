@@ -1,3 +1,5 @@
+
+/*
 const aboutMeImageContainer = document.querySelector('.aboutme-image');
 const imageSources = [
     "/style/media/me/purple-me.png",
