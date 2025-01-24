@@ -126,7 +126,7 @@ header {
                     display: flex;
                     flex-direction: column;
                     position: absolute;
-                    background-color: #F6A5A5;
+                    background-color: #FFC0CD;
                     width: 200px;
                     height: 100vh;
                     right: -100%;
