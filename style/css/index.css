@@ -38,8 +38,9 @@ main {
             top: 35%;
             transform: translate(-50%);
 
-            background-color: rgb(236, 235, 233);
+            background-color: white;
             padding: 25px;
+            border-radius: 25px;
             width: 450px;
             text-align: center;
 
@@ -697,7 +698,7 @@ main {
     }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 475px) {
     .top-section {
         .top-border {
             .titles {    
@@ -707,6 +708,32 @@ main {
                 }
                 h2 {
                     font-size: 12.5px;
+                }
+            }
+        }
+    }
+    .category-section {
+
+        .category-border {
+            width: 100%;
+            min-height: 300px;
+            padding-bottom: 40px;
+        }
+
+        h3 {
+            padding-bottom: 0px;
+            margin-bottom: 0px;
+        }
+    
+        .categories {
+            flex-direction: column;
+        }
+    }
+    .websites {
+        .slideshow-elements {
+            .slideshow-main {
+                .arrows {
+                    display: none;
                 }
             }
         }
