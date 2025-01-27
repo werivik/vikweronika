@@ -1,3 +1,25 @@
+document.addEventListener("DOMContentLoaded", () => {
+    const contactLink = document.querySelector(".contact-button-header");
+    const flowers = document.querySelectorAll(".flower-header");
+
+    contactLink.addEventListener("mouseenter", () => {
+        flowers.forEach(flower => {
+            flower.style.display = "block";
+            flower.style.opacity = "1";
+            flower.style.transition = "opacity 0.3s ease";
+        });
+    });
+
+    contactLink.addEventListener("mouseleave", () => {
+        flowers.forEach(flower => {
+            flower.style.opacity = "0";
+            setTimeout(() => {
+                flower.style.display = "none";
+            }, 150);
+        });
+    });
+});
+
 function adjustHeaderFontColor() {
     const header = document.querySelector("header");
     if (!header) return;

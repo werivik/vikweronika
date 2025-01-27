@@ -12,16 +12,15 @@
 
     <link rel="shortcut icon" href="/style/media/favicon/favicon-32x32.png" type="image/x-icon">
 
-    <!-- <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> -->
+    <script src="https://kit.fontawesome.com/2ef99fbf3a.js" crossorigin="anonymous"></script>
 
 </head>
 
 <body>
 
     <script src="/js/header.js" defer></script>
-   <!-- <script src="/js/contact/contact-form.js" defer type="module"></script> -->  
 
-    <main id="mainContact">
+    <main>
 
         <header>
             <div class="header-border">
@@ -35,99 +34,57 @@
                     </li>
                 </div>
                 <div class="right-side">
-                    <a href="contact.html">Contact Me</a>
+                    <div class="contact-header">
+                        <a href="contact.html" class="contact-button-header">Contact Me</a>
+                        <img src="/style/media/flowers/dark-grey.png" alt="" id="top-right" class="flower-header">
+                        <img src="/style/media/flowers/light-grey.png" alt="" id="top-middle" class="flower-header">
+                        <img src="/style/media/flowers/dark-grey.png" alt="" id="bottom-middle" class="flower-header">
+                        <img src="/style/media/flowers/light-grey.png" alt="" id="bottom-left" class="flower-header">
+                    </div>
+                </div>
+                <div class="responsive-menu">
+                    <i class="fa-solid fa-bars" id="menuBar"></i>
+                    <i class="fa-solid fa-bars-staggered" id="menuBarHover"></i>
+                    <i class="fa-solid fa-xmark" id="menuClose"></i>
+                    <li id="menuLinks" class="responsive-links">
+                        <a href="index.html" class="top-link">Home</a>
+                        <a href="index.html#webcat">My Projects</a>
+                        <a href="about.html">About Me</a>
+                        <a href="contact.html"><div class="active-link"><img src="/style/media/flowers/pink.png" alt=""></div>Contact Me</a>
+                    </li>
                 </div>
             </div>
         </header>
 
-        <!--
-        <section class="top-section">
-            <div class="top-border">
-                <h1>Contact Me</h1>
-                <div class="contact-content">
-                    <span>If you want to reach me, please fillout the contact form below or contact me through my sosials.</span>
-                    
-                    <form action="" class="contact-form">
-                        <div class="email-input">
-                            <label for="email">Email:</label>
-                            <input type="email" id="email" name="email" placeholder="Your email adress..." required>
-                        </div>
-                    
-                        <div class="subject-input">
-                            <label for="subject">Your Message:</label>
-                            <textarea id="subject" name="subject" placeholder="Write here..." style="height:200px" required>
-                            </textarea>
-                        </div>
-                    
-                        <button class="submit-button" id="submitEmail">
-                            Send
-                        </button>
-
-                        <div id="errorMessage" style="color: red; display: none;">Please enter a valid Email and Message!</div>
-                        <div id="successMessage" style="color: green; display: none;">Message sent successfully!</div>
-
-                    </form>
-
-                    <div class="extra-info">
-                        <span>Having troubles? You can contact me by my email or my sosials!</span>
-                        <p>Email: <a href="mailto:vikweronika@gmail.com">vikweronika@gmail.com</a></p>
-                        <p>Linkedln: <a href="https://www.linkedin.com/in/weronika-vik-0844022a6/">Weronika Vik</a></p>
-                        <p>Messenger: <a href=""></a> Weronika Vik</p>
-                    </div>
-
-                    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-
-                </div>
-            </div>
-        </section>
-        -->
-
-        <section class="contact-sec">
-            <div class="contact-content">
-                <div class="left-side">
-                    <img src="/style/media/me/sideprofile.jpg" alt="">
-                </div>
-                <div class="right-side">
-                    <div class="right-contact-infos">
+        <div id="pageContent">
+            <section class="top-section">
+                <div class="top-border">
+                    <div class="title">
                         <h1>Contact Me</h1>
-                        <div class="contacts-info">
-                            <span>You can reach me by my contact info below.</span>
-                            <p>Email Address: <a href="">vikweronika@gmail.com</a></p>
-                            <p>Linkedin: <a href="https://www.linkedin.com/in/weronika-vik-0844022a6/">Weronika Vik</a></p>
-                            <p>Messenger: Weronika Vik</p>
+                    </div>
+                    <div class="top-content">
+                        <div class="contact-content">
+                            <h5>You can contact me through one of these contact informations:</h5>
+                            <div class="contact-info">
+                                <div class="left-info">
+                                    <span>Email:</span>
+                                    <span>Linkedin:</span>
+                                    <span>Messenger:</span>
+                                </div>
+                                <div class="right-info">
+                                    <p>vikweronika@gmail.com</p>
+                                    <a href="https://www.linkedin.com/in/weronika-vik-0844022a6/">Weronika Vik</a>
+                                    <a href="https://www.facebook.com/weronika.kwidzynska/">Weronika Vik</a>
+                                </div>
+                            </div>
                         </div>
-                        <!--
-                        <div class="examples">
-                            <h3>What can You reach out About?</h3>
-                            <p><span>Questions or Feedback:</span> If you have any questions about my work, experience, or anything on my portfolio, I'm happy to provide answers.</p>
-                            <p><span>Collaborations or Proposals:</span> Interested in collaborating on a project? Let’s talk about how we can work together.</p>
-                            <p><span>Job Opportunities:</span> Looking for a developer? I'm open to full-time roles, freelance opportunities, and internships.</p>
-                        </div>
-                        -->
+                    </div>
+                    <div class="top-image">
+                        <img src="/style/media/me/working.jpeg" alt="">
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <section class="middle-sec">
-            <div class="middle-content">
-                <h2>Reasons to Contact Me</h2>
-                <div class="question-collage">
-                    <div class="answer">
-                        <h4>Questions or Feedback</h4>
-                        <p>If you have any questions about my work, experience, or anything on my portfolio, I'm happy to provide answers.</p>
-                    </div>
-                    <div class="answer">
-                        <h4>Collaborations or Proposals</h4>
-                        <p>Interested in collaborating on a project? Let’s talk about how we can work together.</p>
-                    </div>
-                    <div class="answer">
-                        <h4>Job Opportunities</h4>
-                        <p>Looking for a developer? I'm open to full-time roles, freelance opportunities, and internships.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+            </section>
+        </div>
 
     </main>
 

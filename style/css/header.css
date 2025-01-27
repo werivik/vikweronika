@@ -64,15 +64,67 @@ header {
         }
     
         .right-side {
-            a {
-                padding: 10px 15px 10px 15px;
-                background-color: #FFC0CD;
-                font-weight: 600;
-                border-radius: 25px;
-                &:hover {
+            .contact-header {
+                position: relative;
+                .contact-button-header {
+                    padding: 10px 15px 10px 15px;
+                    background-color: #FFC0CD;
+                    font-weight: 600;
+                    border-radius: 25px;
+                    &:hover {
+                        transition: 0.2s;
+                        color: white;
+                        background-color: #E4879A;
+                    }
+                }
+
+                .flower-header {
+                    display: none;
+                    transition: opacity 0.3s ease;
+                }
+
+                img {
+                    object-fit: contain;
+                    position: absolute;
+                }
+
+                #top-right {
+                    bottom: 50%;
+                    left: 100%;
+                    width: 30px;
+                    height: 30px;
+                    animation: spin 10s linear infinite;
+                    z-index: 2;
                     transition: 0.2s;
-                    color: white;
-                    background-color: #E4879A;
+                }
+                #top-middle{
+                    bottom: 125%;
+                    left: 85%;
+
+                    width: 15px;
+                    height: 15px;
+                    animation: spin2 5s linear infinite;
+                    z-index: 2;
+                    transition: 0.2s;
+                }
+                #bottom-left {
+                    top: 50%;
+                    left: -20%;
+                    width: 27px;
+                    height: 27px;
+                    animation: spin 7s linear infinite;
+                    z-index: 2;
+                    transition: 0.2s;
+                }
+                #bottom-middle {
+                    top: 140%;
+                    left: 5%;
+
+                    width: 12px;
+                    height: 12px;
+                    animation: spin2 3s linear infinite;
+                    z-index: 2;
+                    transition: 0.2s;
                 }
             }
         }
@@ -125,6 +177,21 @@ header {
                 a {
                     font-size: 22px;
                     margin-left: 25px;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 15px;
+
+                    .active-link {
+                        width: 20px;
+                        height: 20px;
+                        img {
+                            width: 20px;
+                            height: 20px;
+                            object-fit: contain;
+                            border-radius: 999px;
+                        }
+                    }
                 }
             }
 
@@ -136,6 +203,24 @@ header {
                 transform: translateX(0);
             }
         }
+    }
+}
+
+@keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}
+
+@keyframes spin2 {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(-360deg);
     }
 }
 

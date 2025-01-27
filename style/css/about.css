@@ -1,6 +1,7 @@
 main {
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
 }
 
 .banner-section {
@@ -89,7 +90,7 @@ main {
             position: absolute;
             z-index: 2;
             left: 50%;
-            top: 43.5%;
+            top: 38.5%;
             transform: translate(-50%);
 
             background-color: white;
@@ -130,14 +131,16 @@ main {
         padding-right: 25px;
         display: flex;
         flex-direction: row;
-        justify-content: center;
-        gap: 47px;
+        justify-content: space-evenly;
+        align-items: center;
         position: relative;
+        flex-wrap: wrap;
     }
 
     .skill {
         height: 100%;
         position: relative;
+        text-align: center;
         p {
             display: flex;
             flex-direction: column;
@@ -146,6 +149,7 @@ main {
             width: 100%;
             font-size: 16px;
             height: 45px;
+            width: 75px;
         }
 
         img {
@@ -215,14 +219,6 @@ main {
         position: absolute;
         left: -60px;
         margin-top: 30px;
-    
-        .line {
-            margin-top: -8px;
-            width: 4px;
-            height: 405px;
-            background-color: #d36582;
-            z-index: 1;
-        }
     
         .dot {
             background-color: #d36582;
@@ -379,9 +375,81 @@ main {
     }
 }
 
+@media screen and (max-width: 1250px) {
+    .contact-me {
+        height: 55px;
+    
+        .custom-contact {    
+            a {
+                padding: 3px 15px 3px 15px;
+                font-size: 18px;
+            }
+    
+            .light-flower {
+                left: 59%;
+                width: 55px;
+                height: 55px;
+            }
+    
+            .dark-flower3 {
+                left: 57%;
+                bottom: 110%;
+                width: 12px;
+                height: 12px;
+            }
+    
+            .dark-flower1 {
+                top: 45%;
+                left: 35%;
+                width: 45px;
+                height: 45px;
+            }
+    
+            .dark-flower2 {
+                top: 115%;
+                left: 40%;
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }  
+}
+@media screen and (max-width: 1050px) {
+    .contact-me {
+        height: 50px;
+    
+        .custom-contact {    
+            a {
+                font-size: 17px;
+            }
+        }
+    }  
+}
+@media screen and (max-width: 950px) {
+    .contact-me {    
+        .custom-contact {    
+
+            .light-flower {
+                left: 62%;
+            }
+    
+            .dark-flower3 {
+                left: 60%;
+            }
+    
+            .dark-flower1 {
+                left: 30%;
+            }
+    
+            .dark-flower2 {
+                left: 37%;
+            }
+        }
+    }  
+}
 @media screen and (max-width: 850px) {
     .banner-section {
-        height: 70vh;
+        height: 65vh;
         margin-top: 125px;
         margin-bottom: 75px;
         .banner-border {
@@ -429,9 +497,6 @@ main {
         }
         .timeline {
             margin-top: 25px;
-            .line {
-                height: 655px;
-            }
         
             .dot {
                 width: 25px;
@@ -439,4 +504,102 @@ main {
             }
         }
     }
+}
+@media screen and (max-width: 520px) {
+    .contact-me {    
+        .custom-contact {    
+            a {
+                font-size: 15px;
+            }
+
+            .light-flower {
+                left: 64%;
+            }
+    
+            .dark-flower3 {
+                left: 61%;
+            }
+    
+            .dark-flower1 {
+                left: 27%;
+            }
+    
+            .dark-flower2 {
+                left: 35%;
+            }
+        }
+    }  
+}
+@media screen and (max-width: 620px) {
+    .banner-section {
+        height: 45vh;
+        margin-top: 225px;
+        margin-bottom: 175px;
+        .banner-border {
+            .banner-text{
+                width: 200px;
+                top: 37.5%;
+                h1 {
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+    .contact-me {    
+        .custom-contact {    
+
+            .light-flower {
+                left: 68%;
+            }
+    
+            .dark-flower3 {
+                left: 65%;
+            }
+    
+            .dark-flower1 {
+                left: 20%;
+            }
+    
+            .dark-flower2 {
+                left: 30%;
+            }
+        }
+    }  
+}
+@media screen and (max-width: 400px) {
+    .about-background, .about-skills, .about-future {
+        margin-left: 25px;
+        h2 {
+            font-size: 20px;
+        }
+    
+        p {
+            font-size: 16px;
+        }
+
+        .timeline {
+            margin-left: 25px;
+            margin-top: 15px;
+        }
+    }
+    .contact-me {    
+        .custom-contact {    
+
+            .light-flower {
+                left: 72%;
+            }
+    
+            .dark-flower3 {
+                left: 68%;
+            }
+    
+            .dark-flower1 {
+                left: 14%;
+            }
+    
+            .dark-flower2 {
+                left: 27%;
+            }
+        }
+    }  
 }
