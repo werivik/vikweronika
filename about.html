@@ -12,14 +12,15 @@
 
     <link rel="shortcut icon" href="/style/media/favicon/favicon-32x32.png" type="image/x-icon">
 
+    <script src="https://kit.fontawesome.com/2ef99fbf3a.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
 
     <script src="/js/header.js" defer></script>
-    <script src="/js/about/slideshow.js" defer></script>
 
-    <main id="mainAbout">
+    <main id="aboutPage">
 
         <header>
             <div class="header-border">
@@ -35,137 +36,148 @@
                 <div class="right-side">
                     <a href="contact.html">Contact Me</a>
                 </div>
+                <div class="responsive-menu">
+                    <i class="fa-solid fa-bars" id="menuBar"></i>
+                    <i class="fa-solid fa-bars-staggered" id="menuBarHover"></i>
+                    <i class="fa-solid fa-xmark" id="menuClose"></i>
+                    <li id="menuLinks" class="responsive-links">
+                        <a href="index.html" class="top-link">Home</a>
+                        <a href="index.html#webcat">My Projects</a>
+                        <a href="about.html">About Me</a>
+                    </li>
+                </div>
             </div>
         </header>
 
-        <section class="banner-section">
-            <div class="banner-border">
-                <div class="banner-text">
-                    <h1>About Me</h1>
-                </div>
-                <div class="banner-gallery">
-                    <div class="gallery">
-                        <div class="v-image">
-                            <img src="style/media/me/sideprofile.jpg" alt="" id="topLeftImage">
-                        </div>
-                        <div class="v-image">
-                            <img src="style/media/me/me2.jpg" alt="">
-                        </div>
-                        <div class="h-image">
-                            <img src="style/media/me/meblackandgrey.png" alt="" id="bottomLeftImage">
-                        </div>
-                    </div>
-                    <div class="gallery">
-                        <div class="right-image">
-                            <img src="style/media/me/me4.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <div id="pageContent">
 
-        <div class="overview-skills">
-            <h3>My Skills</h3>
-            <div class="all-skills">
-                <div class="skill">
-                    <p><img src="/style/icons/html5-brands-solid.svg" alt="">HTML</p>
+            <section class="banner-section">
+                <div class="banner-border">
+                    <div class="banner-text">
+                        <h1>About Me</h1>
+                    </div>
+                    <div class="banner-gallery">
+                        <div class="gallery">
+                            <div class="left">
+                                <div class="top-left">
+                                    <img src="style/media/me/me2.jpg" alt="A picture of a young woman dressed in traditional norwegian dress, bunad, sitting on a swing outside." id="leftImage">
+                                    <img src="/style/media/me/sideprofile.jpg" alt="A picture of a young womans face, showing the sideprofile in a purple setting." id="imageAway">
+                                </div>
+                                <div class="bottom-left">
+                                    <img src="style/media/me/meblackandgrey.png" alt="A picture of a young woman smilling with an open mouth outside, with a black and white filter." id="bottomImage">
+                                </div>
+                            </div>
+                            <div class="right-image">
+                                <img src="style/media/me/me4.jpg" alt="A picture of a young woman standing against a glass fence, with the view of Bergen city.">
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="skill">
-                    <p><img src="/style/icons/css-brands-solid.svg" alt="">CSS</p>
-                </div>
-                <div class="skill">
-                    <p><img src="/style/icons/js-brands-solid.svg" alt="">JavaScript</p>
-                </div>
-                <div class="skill">
-                    <p><img src="/style/icons/figma-brands-solid.svg" alt="">Figma</p>
-                </div>
-                <div class="skill">
-                    <p><img src="/style/icons/paintbrush-solid.svg" alt="">Tailwind</p>
-                </div>
-                <div class="skill">
-                    <p><img src="/style/icons/git-brands-solid.svg" alt="">Git</p>
-                </div>
-                <div class="skill">
-                    <p><img src="/style/icons/code-solid.svg" alt="">Vite</p>
-                </div>
-                <div class="skill">
-                    <p><img src="/style/icons/code-solid.svg" alt="">Cypress</p>
-                </div>
-                <div class="skill">
-                    <p><img src="/style/icons/code-solid.svg" alt="">Husky</p>
-                </div>
-                <div class="skill">
-                    <p><img src="/style/icons/github-logo.svg" alt="">Github</p>
-                </div>
-                <div class="skill">
-                    <p><img src="style/icons/code-solid.svg" alt="">Netlify</p>
-                </div>
-                <div class="skill">
-                    <p><img src="/style/icons/code-solid.svg" alt="">Bash</p>
-                </div>
-                <div class="skill">
-                    <p><img src="style/icons/laptop-code-solid.svg" alt="">VS Code</p>
-                </div>
-                <div class="skill">
-                    <p><img src="/style/icons/code-solid.svg" alt="">Node JS</p>
+            </section>
+    
+            <div class="overview-skills">
+                <h3>My Skills</h3>
+                <div class="all-skills">
+                    <div class="skill">
+                        <p><img src="/style/icons/html5-brands-solid.svg" alt="">HTML</p>
+                    </div>
+                    <div class="skill">
+                        <p><img src="/style/icons/css-brands-solid.svg" alt="">CSS</p>
+                    </div>
+                    <div class="skill">
+                        <p><img src="/style/icons/js-brands-solid.svg" alt="">JavaScript</p>
+                    </div>
+                    <div class="skill">
+                        <p><img src="/style/icons/figma-brands-solid.svg" alt="">Figma</p>
+                    </div>
+                    <div class="skill">
+                        <p><img src="/style/icons/paintbrush-solid.svg" alt="">Tailwind</p>
+                    </div>
+                    <div class="skill">
+                        <p><img src="/style/icons/git-brands-solid.svg" alt="">Git</p>
+                    </div>
+                    <div class="skill">
+                        <p><img src="/style/icons/code-solid.svg" alt="">Vite</p>
+                    </div>
+                    <div class="skill">
+                        <p><img src="/style/icons/code-solid.svg" alt="">Cypress</p>
+                    </div>
+                    <div class="skill">
+                        <p><img src="/style/icons/code-solid.svg" alt="">Husky</p>
+                    </div>
+                    <div class="skill">
+                        <p><img src="/style/icons/github-logo.svg" alt="">Github</p>
+                    </div>
+                    <div class="skill">
+                        <p><img src="style/icons/code-solid.svg" alt="">Netlify</p>
+                    </div>
+                    <div class="skill">
+                        <p><img src="/style/icons/code-solid.svg" alt="">Bash</p>
+                    </div>
+                    <div class="skill">
+                        <p><img src="style/icons/laptop-code-solid.svg" alt="">VS Code</p>
+                    </div>
+                    <div class="skill">
+                        <p><img src="/style/icons/code-solid.svg" alt="">Node JS</p>
+                    </div>
                 </div>
             </div>
+    
+            <section class="about-section">
+    
+                <div class="white-background" id="aboutTop">
+                    <div class="about-me-content">
+                        <div class="about-background" id="background">
+                            <div class="timeline">
+                                <div class="dot"><img src="/style/media/flowers/pink.png" alt=""></div>
+                                <div class="line"></div>  
+                            </div>
+                            <div class="aboutme-text">
+                                <h2>My Background</h2>
+                                <p>Hi there! I’m a 23 year old front-end developer who loves turning creative ideas into beautiful, functional websites. There’s something so exciting about starting with a blank page and watching it come to life through design and coding.</p>
+                                <p>I really enjoy working with others—whether it’s brainstorming ideas, solving problems together, or just helping out a teammate. That said, I’m just as happy diving into solo projects where I can take charge and put my own stamp on things. Either way, I always put my best into everything I do and make unique websites each time.</p>
+                                <p>At the heart of it all, I’m just someone who loves what they do and is always excited to learn and grow. Whether it’s tackling a new challenge or finding new ways to make a website shine, I’m always up for it!</p>
+                            </div>
+                        </div>
+                        <div class="about-skills" id="skills">
+                            <div class="timeline">
+                                <div class="dot"><img src="/style/media/flowers/pink.png" alt=""></div>
+                                <div class="line"></div>  
+                            </div>
+                            <div class="aboutme-text">
+                                <h2>My Skills & Expertise</h2>
+                                <p>During my studies, I built a strong foundation in front-end development, focusing on creating user interfaces that seamlessly merge customer experience with system development. I learned to develop products that not only look visually appealing but also deliver exceptional functionality and technical precision. My education emphasized a comprehensive approach, combining design processes, interaction design, and programming to prepare me for real-world challenges.</p>
+                                <p>Throughout my time at school, I mastered key programming languages and frameworks, including HTML, CSS, JavaScript, Tailwind, Vite, and Bash. I also gained proficiency with essential tools for front-end development, such as Git, Cypress, Husky, and Github, to manage workflows and collaborate effectively. In addition to coding, I learned to work with industry-standard programs like Figma for design, Netlify for deployment, and Visual Studio Code for code editing and debugging.</p>
+                                <p>My education was hands-on, with practical tasks that mirrored the challenges of the industry. These projects taught me how to optimize workflows, automate tasks, and streamline work processes to deliver high-quality results efficiently. I also explored the principles of entrepreneurship, gaining insight into the business side of development.</p>
+                                <p>I would say the highlights of my education was the projects at the end of each semester. With these I had to be creative with the design and use everything I previously learned to my advantage.</p>
+                                <p>Overall, my studies provided me with the theoretical knowledge and practical expertise needed to excel in a career as a front-end developer.</p>
+                            </div>
+                        </div>
+                        <div class="about-future" id="future">
+                            <div class="timeline">
+                                <div class="dot"><img src="/style/media/flowers/pink.png" alt=""></div>
+                            </div>
+                            <div class="aboutme-text">
+                                <h2>Future Plans</h2>
+                                <p>In the near future I want to learn plenty of programming languages such as Rust, Angular, TypeScript, React and Python - to widen my coding knowlegde. I want develope further abilities and skills to improve what can be improved and perfect my expertise. I hope to better myself each day and to not give up on becoming a better developer. I am also interested in studying Backend development and become a Fullstack developer!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-me-content">
+                        <div class="contact-me">
+                            <div class="custom-contact">
+                                <img src="/style/media/flowers/dark-grey.png" class="dark-flower3" alt="">
+                                <img src="/style/media/flowers/light-grey.png" class="light-flower" alt="">
+                                <a href="contact.html">Contact Me</a>
+                                <img src="/style/media/flowers/dark-grey.png" class="dark-flower1" alt="">
+                                <img src="/style/media/flowers/dark-grey.png" class="dark-flower2" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+            </section>
         </div>
-
-        <section class="about-section">
-
-            <div class="white-background" id="aboutTop">
-                <div class="about-me-content">
-                    <div class="about-background" id="background">
-                        <div class="timeline">
-                            <div class="dot"><img src="/style/media/flowers/pink.png" alt=""></div>
-                            <div class="line"></div>  
-                        </div>
-                        <div class="aboutme-text">
-                            <h2>My Background</h2>
-                            <p>Hi there! I’m a 23 year old front-end developer who loves turning creative ideas into beautiful, functional websites. There’s something so exciting about starting with a blank page and watching it come to life through design and coding.</p>
-                            <p>I really enjoy working with others—whether it’s brainstorming ideas, solving problems together, or just helping out a teammate. That said, I’m just as happy diving into solo projects where I can take charge and put my own stamp on things. Either way, I always put my best into everything I do and make unique websites each time.</p>
-                            <p>At the heart of it all, I’m just someone who loves what they do and is always excited to learn and grow. Whether it’s tackling a new challenge or finding new ways to make a website shine, I’m always up for it!</p>
-                        </div>
-                    </div>
-                    <div class="about-skills" id="skills">
-                        <div class="timeline">
-                            <div class="dot"><img src="/style/media/flowers/pink.png" alt=""></div>
-                            <div class="line"></div>  
-                        </div>
-                        <div class="aboutme-text">
-                            <h2>My Skills & Expertise</h2>
-                            <p>During my studies, I built a strong foundation in front-end development, focusing on creating user interfaces that seamlessly merge customer experience with system development. I learned to develop products that not only look visually appealing but also deliver exceptional functionality and technical precision. My education emphasized a comprehensive approach, combining design processes, interaction design, and programming to prepare me for real-world challenges.</p>
-                            <p>Throughout my time at school, I mastered key programming languages and frameworks, including HTML, CSS, JavaScript, Tailwind, Vite, and Bash. I also gained proficiency with essential tools for front-end development, such as Git, Cypress, Husky, and Github, to manage workflows and collaborate effectively. In addition to coding, I learned to work with industry-standard programs like Figma for design, Netlify for deployment, and Visual Studio Code for code editing and debugging.</p>
-                            <p>My education was hands-on, with practical tasks that mirrored the challenges of the industry. These projects taught me how to optimize workflows, automate tasks, and streamline work processes to deliver high-quality results efficiently. I also explored the principles of entrepreneurship, gaining insight into the business side of development.</p>
-                            <p>I would say the highlights of my education was the projects at the end of each semester. With these I had to be creative with the design and use everything I previously learned to my advantage.</p>
-                            <p>Overall, my studies provided me with the theoretical knowledge and practical expertise needed to excel in a career as a front-end developer.</p>
-                        </div>
-                    </div>
-                    <div class="about-future" id="future">
-                        <div class="timeline">
-                            <div class="dot"><img src="/style/media/flowers/pink.png" alt=""></div>
-                        </div>
-                        <div class="aboutme-text">
-                            <h2>Future Plans</h2>
-                            <p>In the near future I want to learn plenty of programming languages such as Rust, Angular, TypeScript, React and Python - to widen my coding knowlegde. I want develope further abilities and skills to improve what can be improved and perfect my expertise. I hope to better myself each day and to not give up on becoming a better developer. I am also interested in studying Backend development and become a Fullstack developer!</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="contact-me-content">
-                    <div class="contact-me">
-                        <div class="custom-contact">
-                            <img src="/style/media/flowers/dark-grey.png" class="dark-flower3" alt="">
-                            <img src="/style/media/flowers/light-grey.png" class="light-flower" alt="">
-                            <a href="contact.html">Contact Me</a>
-                            <img src="/style/media/flowers/dark-grey.png" class="dark-flower1" alt="">
-                            <img src="/style/media/flowers/dark-grey.png" class="dark-flower2" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </section>
 
     </main>
 

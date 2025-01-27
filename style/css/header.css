@@ -101,6 +101,7 @@ header {
             #menuBarHover, #menuClose {
                 display: none;
                 transition: 0.5s;
+                color: #12263a;
             }
 
             .responsive-links {

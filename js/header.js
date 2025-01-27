@@ -3,6 +3,8 @@ function adjustHeaderFontColor() {
     if (!header) return;
 
     const headerLinks = header.querySelectorAll("a");
+    if (!headerLinks.length) return;
+    
     const backgroundColor = window.getComputedStyle(header).backgroundColor;
     const rgb = backgroundColor.match(/\d+/g).map(Number);
 
