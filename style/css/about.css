@@ -6,7 +6,7 @@ main {
 
 .top-section {
     margin-top: 100px;
-    margin-bottom: 50px;
+    margin-bottom: 15px;
     height: 80vh;
     width: 100%;
     position: relative;
@@ -101,7 +101,7 @@ main {
             text-align: center;
 
             h1 {
-                font-size: 40px;
+                font-size: 80px;
                 margin: 0;
                 padding: 0;
             }
@@ -121,6 +121,7 @@ main {
         border-radius: 25px 25px 0px 0px;
         padding: 10px 30px 5px 30px;
         margin-bottom: 0px;
+        font-size: 45px;
     }
 
     .all-skills {
@@ -200,7 +201,7 @@ main {
     margin-top: 0px;
 
     h2 {
-        font-size: 30px;
+        font-size: 55px;
         padding: 0;
         margin: 0;
     }
