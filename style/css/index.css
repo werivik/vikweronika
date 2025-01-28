@@ -4,6 +4,7 @@ main {
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
+    align-items: center;
 }
 
 .top-section {
@@ -611,6 +612,7 @@ main {
 @media screen and (max-width: 850px) {
     .top-section {
         height: 70vh;
+        margin-bottom: 25px;
         .top-border {
             width: 90%;
             .titles {    
