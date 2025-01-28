@@ -453,7 +453,7 @@ main {
     .top-section {
         height: 65vh;
         margin-top: 100px;
-        margin-bottom: 50px;
+        margin-bottom: 25px;
         .top-border {
             width: 90%;
             height: 100%;
@@ -489,8 +489,12 @@ main {
             font-size: 35px;
         }
     }
+    .about-section {
+        margin-bottom: 50px;
+    }
     .white-background {
         width: 90%;
+        margin-top: 50px;
     }
     .about-background, .about-skills, .about-future {
         h2 {
@@ -592,4 +596,7 @@ main {
             }
         }
     }  
+    .about-section {
+        margin-bottom: 25px;
+    }
 }
