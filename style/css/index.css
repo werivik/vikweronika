@@ -612,7 +612,7 @@ main {
     .top-section {
         height: 70vh;
         .top-border {
-            width: 100%;
+            width: 90%;
             .titles {    
                 width: 300px;
                 h1 {
@@ -626,8 +626,9 @@ main {
     }
 
     .category-section {
+        margin-bottom: 20px;
         .category-border {
-            width: 100%;
+            width: 90%;
         }
 
         .categories {
@@ -683,7 +684,7 @@ main {
         }
 
         .end-text {
-            font-size: ;
+            font-size: 18px;
         }
     
     }
@@ -720,7 +721,6 @@ main {
     .category-section {
 
         .category-border {
-            width: 100%;
             min-height: 300px;
             padding-bottom: 40px;
         }
@@ -741,6 +741,9 @@ main {
                     display: none;
                 }
             }
+        }
+        .web-text {
+            width: 90%;
         }
     }
 }
