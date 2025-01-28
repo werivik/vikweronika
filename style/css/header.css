@@ -163,7 +163,7 @@ header {
                 background-color: #FFC0CD;
                 width: 200px;
                 height: 102vh;
-                right: -100%;
+                right: -200%;
                 top: 0;
                 gap: 45px;
                 margin-top: -15px;
@@ -196,7 +196,7 @@ header {
             }
 
             .responsive-links.slide-in {
-                transform: translateX(-100%);
+                transform: translateX(-200%);
             }
             
             .responsive-links.slide-out {
@@ -234,7 +234,7 @@ header {
 
             .right-side {
               padding: 5px 10px 5px 10px;
-              margin-left: 2.5%;  
+              margin-left: 2.5%;
             }
 
             .responsive-menu {
