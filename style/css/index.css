@@ -374,8 +374,7 @@ main {
                     padding-top: 2.5px;
                     background-color: white;
                     box-shadow: 1px 1px 10px 1px rgba(4, 3, 35, 0.189);
-                    font-size: clamp(7px, calc(2.5vw + 0.9vh), 15px);          
-
+                    font-size: 16px;          
                     height: 100%;
 
                     display: flex;
@@ -742,10 +741,19 @@ main {
                 .arrows {
                     display: none;
                 }
+
+                .desc {
+                    top: 90%;
+                    
+                    p {
+                        font-size: 14px;
+                        width: 175px;
+                    }
+                }
             }
         }
         .web-text {
-            width: 90%;
+            width: 80%;
         }
     }
 }
