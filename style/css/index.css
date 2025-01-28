@@ -637,6 +637,10 @@ main {
             width: 98%;
         }
     }
+
+    .category-border {
+        width: 90%;
+    }
 }
 
 @media screen and (max-width: 660px) {
