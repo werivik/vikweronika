@@ -291,11 +291,10 @@ main {
             color: #12263a;
             text-decoration: none;
             background-color: #FFC0CD;
-            padding: 5px 20px 5px 20px;
+            padding: 10px 20px 10px 20px;
             border-radius: 50px;
-            font-size: 20px;
+            font-size: 35px;
             position: absolute;
-            font-family: "Ahganirya";
 
             &:hover {
                 transition: 0.2s;
@@ -383,8 +382,7 @@ main {
     
         .custom-contact {    
             a {
-                padding: 3px 15px 3px 15px;
-                font-size: 18px;
+                font-size: 27px;
             }
     
             .light-flower {
@@ -422,7 +420,7 @@ main {
     
         .custom-contact {    
             a {
-                font-size: 17px;
+                font-size: 22px;
             }
         }
     }  
@@ -516,31 +514,6 @@ main {
         }
     }
 }
-@media screen and (max-width: 520px) {
-    .contact-me {    
-        .custom-contact {    
-            a {
-                font-size: 15px;
-            }
-
-            .light-flower {
-                left: 64%;
-            }
-    
-            .dark-flower3 {
-                left: 61%;
-            }
-    
-            .dark-flower1 {
-                left: 27%;
-            }
-    
-            .dark-flower2 {
-                left: 35%;
-            }
-        }
-    }  
-}
 @media screen and (max-width: 620px) {
     .contact-me {    
         .custom-contact {    
@@ -559,6 +532,31 @@ main {
     
             .dark-flower2 {
                 left: 30%;
+            }
+        }
+    }  
+}
+@media screen and (max-width: 520px) {
+    .contact-me {    
+        .custom-contact {    
+            a {
+                font-size: 20px;
+            }
+
+            .light-flower {
+                left: 64%;
+            }
+    
+            .dark-flower3 {
+                left: 61%;
+            }
+    
+            .dark-flower1 {
+                left: 27%;
+            }
+    
+            .dark-flower2 {
+                left: 35%;
             }
         }
     }  
