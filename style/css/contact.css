@@ -129,14 +129,13 @@ main {
 
     .title {
         h1 {
-            font-size: 28px;
+            font-size: 45px;
         }
     }
 }
 
 @media screen and (max-width: 650px) {
     .top-content {
-        margin-top: 75px;
         .contact-content {
             h5 {
                 min-width: 150px;
@@ -167,7 +166,7 @@ main {
     }
     .title {
         h1 {
-            font-size: 18px;
+            font-size: 35px;
         }
     }
 }

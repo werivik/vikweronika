@@ -461,7 +461,7 @@ main {
                 width: 250px;
                 top: 35%;
                 h1 {
-                    font-size: 28px;
+                    font-size: 60px;
                 }
             }
 
@@ -484,13 +484,17 @@ main {
             flex-wrap: wrap;
             gap: 40px;
         }
+
+        h3 {
+            font-size: 35px;
+        }
     }
     .white-background {
         width: 90%;
     }
     .about-background, .about-skills, .about-future {
         h2 {
-            font-size: 22px;
+            font-size: 35px;
             width: 100%;
         }
     
@@ -534,20 +538,6 @@ main {
     }  
 }
 @media screen and (max-width: 620px) {
-    .banner-section {
-        height: 45vh;
-        margin-top: 225px;
-        margin-bottom: 175px;
-        .banner-border {
-            .banner-text{
-                width: 200px;
-                top: 37.5%;
-                h1 {
-                    font-size: 24px;
-                }
-            }
-        }
-    }
     .contact-me {    
         .custom-contact {    
 
@@ -572,9 +562,6 @@ main {
 @media screen and (max-width: 400px) {
     .about-background, .about-skills, .about-future {
         margin-left: 25px;
-        h2 {
-            font-size: 20px;
-        }
     
         p {
             font-size: 16px;
