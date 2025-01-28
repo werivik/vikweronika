@@ -664,6 +664,7 @@ main {
             width: 95%;    
             margin-right: 2.5%;
             margin-left: 2.5%;
+            padding-top: 45px;
         }
 
         .web2, .web4 {
@@ -712,6 +713,7 @@ main {
 
 @media screen and (max-width: 660px) {
     .category-section {
+        margin-bottom: 0px;
 
         .category-border {
             min-height: 300px;
@@ -765,6 +767,7 @@ main {
         }
 
         .web-text {
+            width: 70%;
             .web-title {
                 h3 {
                     a {
@@ -776,6 +779,26 @@ main {
                     font-size: 18px;
                 }
             }
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .web-text {
+        .web-title {
+            h3 {
+                a {
+                    font-size: 35px;
+                }
+            }
+
+            span {
+                font-size: 18px;
+            }
+        }
+
+        .textbox {
+            width: 90%;
         }
     }
 }
