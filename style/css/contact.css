@@ -143,6 +143,7 @@ main {
             h5 {
                 min-width: 300px;
                 width: 300px;
+                font-size: 20px;
             }
             .contact-info {
                 gap: 25px;
