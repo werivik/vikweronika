@@ -8,46 +8,46 @@ footer {
 }
 
 .footer-border {
-
     .footer-content {
         display: flex;
         flex-direction: column;
         gap: 25px;
         align-items: center;
         justify-content: center;
-        .footer-socials {
-            display: flex;
-            flex-direction: row;
-            gap: 20px;
-            a {
-                font-size: 30px;
-                color: #12263a;
+    }
 
-                img {
-                    width: 30px;
-                    height: 30px;
-                }
+    .footer-socials {
+        display: flex;
+        gap: 20px;
 
-                &:hover {
-                    transition: 0.2s;
-                    color: #d36582;
-                }
+        a {
+            font-size: 30px;
+            color: #12263a;
+
+            img {
+                width: 30px;
+                height: 30px;
+            }
+
+            &:hover {
+                transition: 0.2s;
+                color: #d36582;
             }
         }
+    }
 
-        .footer-links {
-            display: flex;
-            flex-direction: row;
-            gap: 40px;
-            a {
-                font-size: 20px;
-                color: #12263a;
-                text-decoration: none;
+    .footer-links {
+        display: flex;
+        gap: 40px;
 
-                &:hover {
-                    transition: 0.2s;
-                    color: #d36582;
-                }
+        a {
+            font-size: 20px;
+            color: #12263a;
+            text-decoration: none;
+
+            &:hover {
+                transition: 0.2s;
+                color: #d36582;
             }
         }
     }
@@ -57,34 +57,26 @@ footer {
     footer {
         height: 400px;
     }
-    .footer-border {
-        .footer-content {   
-            gap: 40px; 
-            .footer-links {
-                display: flex;
-                flex-direction: column;
-                gap: 40px;
-            }
-        }
-    }  
+
+    .footer-border .footer-content {
+        gap: 40px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 40px;
+    }
 }
 
 @media screen and (max-width: 400px) {
-    .footer-border {
-        .footer-content {
-            .footer-socials {
-                a {
-                    img {
-                        width: 25px;
-                        height: 25px;
-                    }
-                }
-            }
-            .footer-links{
-                a{
-                    font-size: 16px;
-                }
-            }
+    .footer-border .footer-content .footer-socials a {
+        img {
+            width: 25px;
+            height: 25px;
         }
+    }
+
+    .footer-border .footer-content .footer-links a {
+        font-size: 16px;
     }
 }

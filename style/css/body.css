@@ -10,6 +10,13 @@ body {
     width: 100%;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    justify-content: center;
+}
+
 h1, h2, h3, h4 {
     font-family: "Ephesis", serif;   
     font-weight: normal;
