@@ -13,18 +13,18 @@ main {
     justify-content: center;
 }
 .top-border {
-    width: 79%;
+    width: 80%;
     height: 100%;
     border-radius: 25px;
     position: relative;
     background-color: white;
-    border: solid 5px #FFC0CD;
 }
 .top-image {
     width: 100%;
     height: 100%;
     border-radius: 25px;
     overflow: hidden;
+    background-color: black;
     
     img {
         width: 100%;
@@ -32,6 +32,7 @@ main {
         object-fit: cover;  
         border-radius: 25px;
         filter: blur(5px);
+        opacity: 50%;
     }
 }
 .title {
@@ -46,7 +47,7 @@ main {
         margin: 0;
         padding: 0;
     
-        background-color: #FFC0CD;
+        background-color: white;
         padding: 15px 50px 15px 50px;
         border-radius: 0px 0px 25px 25px;
         text-align: center;
@@ -58,6 +59,7 @@ main {
     top: 35%;
     left: 50%;
     transform: translate(-50%);
+    color: white;
 
     .contact-content {
         width: 100%;
@@ -66,7 +68,7 @@ main {
         align-items: center;
         justify-content: center;
         h5 {
-            font-size: 20px;
+            font-size: 24px;
             margin-bottom: 50px;
             font-style: italic;
             text-align: center;
@@ -95,6 +97,7 @@ main {
                 font-size: 20px;
                 margin: 0;
                 padding: 0;
+                color: white;
             }
 
             .left-info, .right-info {
