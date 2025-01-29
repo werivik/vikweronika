@@ -23,7 +23,7 @@ main {
     height: 100%;
     border-radius: 25px;
     overflow: hidden;
-    background-color: black;
+    background-color: rgb(84, 56, 65);
     
     img {
         width: 100%;
