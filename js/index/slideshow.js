@@ -17,13 +17,11 @@ document.addEventListener('DOMContentLoaded', (event) => {
             let currentIndex = 0;
             let isZoomed = false;
             let zoomedImageContainer = null;
-            let startX = 0;
-            let isSwiping = false;
 
             function updateMainContent(index) {
                 mainImage.src = thumbnails[index].src;
                 mainDesc.textContent = descs[index].textContent;
-                progress.textContent = `${index + 1} / ${thumbnails.length}`;
+                progress.textContent = `${index + 1} / ${thumbnails.length}`; // Corrected line
             }
 
             function reorderImages() {
@@ -74,13 +72,13 @@ document.addEventListener('DOMContentLoaded', (event) => {
                 currentIndex = (currentIndex - 1 + thumbnails.length) % thumbnails.length;
                 updateMainContent(currentIndex);
                 reorderImages();
-               
                 if (isZoomed) {
                     updateZoomedImage(currentIndex);
                 }
             }
 
             function createZoomedImageContainer() {
+                
                 const container = document.createElement('div');
                 container.classList.add('zoomed-image-container');
                 container.style.position = 'fixed';
@@ -95,24 +93,24 @@ document.addEventListener('DOMContentLoaded', (event) => {
                 container.style.backdropFilter = 'blur(5px)';
                 container.style.zIndex = '1000';
 
-                container.innerHTML = `
-                    <div class="zoomed-container">
-                    <img src="" alt="">
-                    <div class="desc">
-                        <p></p>
-                    </div>
-                    <div class="arrows">
-                        <div class="left"><i class="fa-solid fa-caret-left"></i></div>
-                        <div class="right"><i class="fa-solid fa-caret-right"></i></div>
-                    </div>
-                    </div>
-                `;
+                container.innerHTML = 
+                    `<div class="zoomed-container">
+                        <img src="" alt="">
+                        <div class="desc">
+                            <p></p>
+                        </div>
+                        <div class="arrows">
+                            <div class="left"><i class="fa-solid fa-caret-left"></i></div>
+                            <div class="right"><i class="fa-solid fa-caret-right"></i></div>
+                        </div>
+                    </div>`;
 
                 document.body.appendChild(container);
                 return container;
             }
 
             function updateZoomedImage(index) {
+
                 const zoomedImage = zoomedImageContainer.querySelector('img');
                 zoomedImage.src = thumbnails[index].src;
 
@@ -121,9 +119,11 @@ document.addEventListener('DOMContentLoaded', (event) => {
             }
 
             function toggleZoom() {
+
                 if (isZoomed) {
                     zoomedImageContainer.remove();
                 } 
+                
                 else {
                     zoomedImageContainer = createZoomedImageContainer();
                     const zoomedImage = zoomedImageContainer.querySelector('img');
@@ -139,45 +139,14 @@ document.addEventListener('DOMContentLoaded', (event) => {
                 isZoomed = !isZoomed;
             }
 
-            function handleSwipe(event) {
-                const touchEndX = event.changedTouches[0].clientX;
-                const swipeThreshold = 50;
-
-                if (touchEndX < startX - swipeThreshold) {
-                    showNextImage();
-                } 
-                else if (touchEndX > startX + swipeThreshold) {
-                    showPrevImage();
-                }
-
-                isSwiping = false;
-            }
-
-            function startSwipe(event) {
-                startX = event.touches[0].clientX;
-                isSwiping = true;
-            }
-
-            if (window.innerWidth <= 660) {
-                leftArrow.style.display = 'none';
-                rightArrow.style.display = 'none';
-
-                zoomedImageContainer = createZoomedImageContainer();
-                zoomedImageContainer.addEventListener('touchstart', startSwipe);
-                zoomedImageContainer.addEventListener('touchend', handleSwipe);
-            } 
-            
-            else {
-                leftArrow.style.display = 'block';
-                rightArrow.style.display = 'block';
-            }
-
             rightArrow.addEventListener('click', showNextImage);
             leftArrow.addEventListener('click', showPrevImage);
             mainImage.addEventListener('click', toggleZoom);
 
             thumbnails.forEach((thumbnail, index) => {
+
                 thumbnail.addEventListener('click', () => {
+
                     currentIndex = index;
                     updateMainContent(currentIndex);
                     reorderImages();
