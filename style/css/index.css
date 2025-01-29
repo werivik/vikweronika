@@ -283,7 +283,7 @@
     box-shadow: 1px 1px 10px 1px rgba(4, 3, 35, 0.189);
     color: #12263a;
 }
-.left i, .right i:hover {
+.left i:hover, .right i:hover {
     transition: 0.2s;
     cursor: pointer;
     color: #d36582;
