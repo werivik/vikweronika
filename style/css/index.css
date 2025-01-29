@@ -24,12 +24,15 @@ main {
 .top-image {
     width: 100%;
     height: 100%;
+    background-color: rgb(84, 56, 65);
+    border-radius: 25px;
 }
 .top-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;  
     border-radius: 25px;
+    opacity: 50%;
 }
 .titles {
     position: absolute;
