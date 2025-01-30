@@ -414,8 +414,8 @@
     box-shadow: 1px 1px 10px 1px rgba(4, 3, 35, 0.189);
     border-radius: 5px;
     object-fit: contain;
-    margin-bottom: 0px;
-    padding-bottom: 0px;
+    margin: 0;
+    padding: 0;
     z-index: 9;
 }
 .zoomed-image-container .desc-arrows {
@@ -431,36 +431,28 @@
     padding: 0;
 }
 .zoomed-image-container .desc-arrows .arrows {
-    height: 40px;
+    height: 35px;
     width: 40px;
     background-color: white;
-    border-radius: 99px;
+    border-radius: 999px;
     box-shadow: 1px 1px 10px 1px rgba(4, 3, 35, 0.189);
     cursor: pointer;
     z-index: 1001;
-}
-.zoomed-image-container .desc-arrows .arrows .zoomed-left,
-.zoomed-image-container .desc-arrows .arrows .zoomed-right {
+
     pointer-events: all;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 40px;
-    width: 40px;
+    object-fit: contain;
+    position: relative;
+}
+.zoomed-image-container .desc-arrows .arrows .zoomed-left,
+.zoomed-image-container .desc-arrows .arrows .zoomed-right {
+    height: 35px;
+    width: 35px;
     object-fit: contain;
     cursor: pointer;
-    border-radius: 99px;
-    background-color: white;
-}
-.zoomed-image-container .desc-arrows .arrows img,
-.zoomed-image-container .desc-arrows .arrows img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 40px;
-    width: 40px;
-    object-fit: contain;
-    border-radius: 99px;
+    border-radius: 999px;
 }
 .zoomed-image-container .desc-arrows .desc {
     width: 200px;
@@ -624,21 +616,13 @@
     }
     .zoomed-image-container .desc-arrows .arrows {
         height: 30px;
-        width: 30px;
+        width: 35px;
     }
     .zoomed-image-container .desc-arrows .arrows .zoomed-left,
     .zoomed-image-container .desc-arrows .arrows .zoomed-right {
         height: 30px;
-        width: 30px;
-        margin: 0px;
+        width: 35px;
     }
-    .zoomed-image-container .desc-arrows .arrows .zoomed-left img,
-    .zoomed-image-container .desc-arrows .arrows .zoomed-right img {
-        height: 30px;
-        width: 30px;
-        margin: 0px;
-    }
-
     .zoomed-image-container .desc-arrows .desc {
         width: 175px;
     }
@@ -752,15 +736,48 @@
     }
     .zoomed-image-container .desc-arrows .arrows,
     .zoomed-image-container .desc-arrows .arrows {
-        width: 25px;
         height: 25px;
+        width: 30px;
         border-radius: 999px;
     }
-    .zoomed-image-container .desc-arrows .arrows img,
-    .zoomed-image-container .desc-arrows .arrows img {
-        width: 25px;
+    .zoomed-image-container .desc-arrows .arrows .zoomed-left,
+    .zoomed-image-container .desc-arrows .arrows .zoomed-right {
         height: 25px;
+        width: 30px;
         border-radius: 999px;
+    }
+}
+@media screen and (max-width: 300px) {
+    .zoomed-image-container .desc-arrows {
+        min-width: 200px;
+    }
+    .zoomed-image-container .desc-arrows .desc p{
+        width: 125px;
+        height: 35px;
+    }
+}
+@media screen and (max-width: 225px) {
+    .zoomed-image-container .desc-arrows .desc {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    .zoomed-image-container .desc-arrows .arrows {
+        position: absolute;
+        margin-top: 100px;
+        left: 50%;
+        transform: translate(-50%);
+        background-color: rgba(255, 255, 255, 0);
+    }
+    .zoomed-image-container .desc-arrows .arrows .zoomed-left {
+        left: 0;
+        margin-right: 100px;
+        background-color: white;
+    }
+    .zoomed-image-container .desc-arrows .arrows .zoomed-right {
+        right: 0;
+        margin-left: 100px;
+        background-color: white;
     }
 }
 
