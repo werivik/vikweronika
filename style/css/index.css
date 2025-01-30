@@ -387,52 +387,86 @@
     align-items: center;
     flex-direction: column;
 }
+.zoomed-image-container .zoomed-container .close-button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-right: 25px;
+    margin-top: 25px;
+    width: 30px;
+    height: 30px;
+}
+.zoomed-image-container .zoomed-container .close-button button{
+    cursor: pointer;
+    background-color: white;
+    border-radius: 99px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-style: none;
+}
 .zoomed-image-container img {
-    max-width: 87%;
-    max-height: 90%;
+    max-width: 85%;
+    max-height: 85%;
     border: 5px solid white;
     box-shadow: 1px 1px 10px 1px rgba(4, 3, 35, 0.189);
-    cursor: zoom-out;
     border-radius: 5px;
     object-fit: contain;
     margin-bottom: 0px;
     padding-bottom: 0px;
     z-index: 9;
 }
-.zoomed-image-container .arrows {
-    position: absolute;
-    width: 90%;
-    top: 47%;
+.zoomed-image-container .desc-arrows {
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-between;
-    pointer-events: none;
+    width: 25%;
+    min-width: 350px;
+    height: 100px;
+    z-index: 1001;
 }
-.zoomed-image-container .arrows .left,
-.zoomed-image-container .arrows .right {
+.zoomed-image-container .desc-arrows .arrows {
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    border-radius: 99px;
+    box-shadow: 1px 1px 10px 1px rgba(4, 3, 35, 0.189);
+    cursor: pointer;
+    z-index: 1001;
+}
+.zoomed-image-container .desc-arrows .arrows .zoomed-left,
+.zoomed-image-container .desc-arrows .arrows .zoomed-right {
     pointer-events: all;
-}
-.zoomed-image-container .arrows .left i,
-.zoomed-image-container .arrows .right i {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(255, 255, 255);
-    font-size: clamp(10px, calc(2.5vw + 0.9vh), 25px);          
-    height: 30px;
-    width: 30px;
-    border-radius: 99px;
+    height: 40px;
+    width: 40px;
+    object-fit: contain;
     cursor: pointer;
-    box-shadow: 1px 1px 10px 1px rgba(4, 3, 35, 0.189);
+    border-radius: 99px;
+    background-color: white;
 }
-.zoomed-image-container .arrows .left i:hover,
-.zoomed-image-container .arrows .right i:hover {
+.zoomed-image-container .desc-arrows .arrows .zoomed-left img,
+.zoomed-image-container .desc-arrows .arrows .zoomed-right img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    object-fit: contain;
+    border-radius: 99px;
+}
+.zoomed-image-container .desc-arrows .arrows .zoomed-left img:hover,
+.zoomed-image-container .desc-arrows .arrows .zoomed-right img:hover {
     transition: 0.2s;
     color: #d36582;
 }
-.zoomed-image-container .desc {
-    padding-top: 5px;
-    width: 100%;
+.zoomed-image-container .desc-arrows .desc {
+    width: 200px;
     display: flex;
     justify-content: center;
     margin-top: 0px;
@@ -440,7 +474,7 @@
     text-align: center;
     z-index: 3;
 }
-.zoomed-image-container .desc p {
+.zoomed-image-container .desc-arrows .desc p {
     width: 200px;
     height: 50px;
     background-color: white;
@@ -583,16 +617,36 @@
         font-size: 18px;
     }
 
-    .zoomed-image-container img {
-        max-width: 80%;
-    }
-
-    .zoomed-image-container .arrows {
-        width: 85%;
-    }
-
     .category-border {
         width: 90%;
+    }
+    .zoomed-image-container img {
+        max-width: 95%;
+    }
+    .zoomed-image-container .desc-arrows .arrows {
+        height: 30px;
+        width: 30px;
+    }
+    .zoomed-image-container .desc-arrows .arrows .zoomed-left,
+    .zoomed-image-container .desc-arrows .arrows .zoomed-right {
+        height: 30px;
+        width: 30px;
+        margin: 0px;
+    }
+    .zoomed-image-container .desc-arrows .arrows .zoomed-left img,
+    .zoomed-image-container .desc-arrows .arrows .zoomed-right img {
+        height: 30px;
+        width: 30px;
+        margin: 0px;
+    }
+
+    .zoomed-image-container .desc-arrows .desc {
+        width: 175px;
+    }
+    .zoomed-image-container .desc-arrows .desc p {
+        width: 175px;
+        height: 40px;
+        font-size: 16px;          
     }
 }
 @media screen and (max-width: 660px) {
@@ -613,14 +667,6 @@
 
     .category-section .categories {
         flex-direction: column;
-    }
-
-    .zoomed-image-container img {
-        max-width: 95%;
-    }
-
-    .zoomed-image-container .arrows {
-        display: none;
     }
 
     .websites .slideshow-elements .slideshow-main .arrows {
