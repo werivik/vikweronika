@@ -435,7 +435,6 @@
     width: 40px;
     background-color: white;
     border-radius: 999px;
-    box-shadow: 1px 1px 10px 1px rgba(4, 3, 35, 0.189);
     cursor: pointer;
     z-index: 1001;
 
@@ -453,6 +452,7 @@
     object-fit: contain;
     cursor: pointer;
     border-radius: 999px;
+    box-shadow: 1px 1px 10px 1px rgba(4, 3, 35, 0.189);
 }
 .zoomed-image-container .desc-arrows .desc {
     width: 200px;
