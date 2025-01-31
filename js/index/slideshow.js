@@ -103,13 +103,13 @@ document.addEventListener('DOMContentLoaded', () => {
                     <img id="zoomed-image" src="" alt="">
                     <div class="desc-arrows">
                         <div class="arrows" id="leftArrowZoomed">
-                            <img src="/style/icons/caret-left-solid.svg" alt="" class="zoomed-left">
+                            <i class="fa-solid fa-caret-left" class="zoomed-left"></i>
                         </div>
                         <div class="desc">
                             <p id="zoomed-desc"></p>
                         </div>
                         <div class="arrows" id="rightArrowZoomed">
-                            <img src="/style/icons/caret-right-solid.svg" alt="" class="zoomed-right">
+                            <i class="fa-solid fa-caret-right" class="zoomed-right"></i>
                         </div>
                     </div>
                 </div>
@@ -178,5 +178,5 @@ document.addEventListener('DOMContentLoaded', () => {
         reorderImages();
     }
 
-    ['.web1', '.web2', '.web3', '.web4', '.web5'].forEach(initializeSlideshow);
+    ['.web1', '.web2', '.web3', '.web4', '.web5', '.web6', '.web7', '.web8', '.web9', '.web10'].forEach(initializeSlideshow);
 });
