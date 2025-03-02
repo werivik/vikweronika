@@ -92,6 +92,7 @@
     color: #12263a;
     margin-top: 35px;
     font-family: 'Courier New', Courier, monospace;
+    transition: 0.2s;
 }
 .categories a i {
     width: 20px;
@@ -175,6 +176,7 @@
     text-decoration: none;
     border-bottom: solid #12263a 1px;
     font-size: 45px; 
+    transition: 0.2s;
 }
 .web-title h3 a:hover {
     transition: 0.2s;
@@ -283,6 +285,7 @@
     cursor: pointer;
     box-shadow: 1px 1px 10px 1px rgba(4, 3, 35, 0.189);
     color: #12263a;
+    transition: 0.2s;
 }
 .left i:hover, .right i:hover {
     transition: 0.2s;
@@ -447,6 +450,7 @@
     position: relative;
     font-size: 25px;
     color: #12263a;
+    transition: 0.2s;
 }
 .zoomed-image-container .desc-arrows .arrows:hover {
     color: #d36582;
@@ -484,6 +488,23 @@
     padding: 0;
 }
 @media screen and (max-width: 1350px) {
+    .category-section {
+        margin-bottom: 50px;
+    }
+
+    .category-section .categories h3 {
+        font-size: 25px;
+    }
+
+    .category-section .categories a {
+        font-size: 14px;
+    }
+
+    .category-section .categories a i {
+        height: 20px;
+        width: 20px;
+        font-size: 18px;
+    }
     .websites {  
         .web1, .web2, .web3, .web4, .web5 {
             flex-wrap: nowrap;
@@ -507,22 +528,25 @@
     }
 }
 @media screen and (max-width: 1100px) {
+
     .category-section {
-        margin-bottom: 50px;
+        margin-bottom: 0px;
     }
 
-    .category-section .categories h3 {
-        font-size: 25px;
+    .category-section .category-border {
+        min-height: 300px;
+        padding-bottom: 40px;
     }
 
-    .category-section .categories a {
-        font-size: 14px;
+    .category-section h3 {
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+        font-size: 35px;
     }
 
-    .category-section .categories a i {
-        height: 20px;
-        width: 20px;
-        font-size: 18px;
+    .category-section .categories {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
     }
 
     .websites {
@@ -585,26 +609,6 @@
     .bottom-section .bottom-border {
         padding-bottom: 50px;
         width: 100%;
-    }
-
-    .category-section {
-        margin-bottom: 0px;
-    }
-
-    .category-section .category-border {
-        min-height: 300px;
-        padding-bottom: 40px;
-        width: 60%;
-    }
-
-    .category-section h3 {
-        padding-bottom: 0px;
-        margin-bottom: 0px;
-        font-size: 35px;
-    }
-
-    .category-section .categories {
-        flex-direction: column;
     }
 
     .websites {

@@ -27,17 +27,20 @@ header {
     color: #12263a;
     text-decoration: none;
     font-size: 18px;
+    transition: 0.2s;
 }
 
 .header-border li {
     list-style-type: none;
+    transition: 0.2s;
 }
 
 .left-side a span {
     font-weight: 700;
+    transition: 0.2s;
 }
 
-.left-side a:hover span {
+.left-side a span:hover {
     transition: 0.2s;
     color: #E4879A;
 }
@@ -55,6 +58,7 @@ header {
 
 .right-side .contact-header {
     position: relative;
+    transition: 0.2s;
 }
 
 .contact-button-header {
@@ -62,6 +66,8 @@ header {
     background-color: #FFC0CD;
     font-weight: 600;
     border-radius: 25px;
+    transition: 0.2s;
+    transition: 0.2s;
 }
 
 .contact-button-header:hover {

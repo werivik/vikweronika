@@ -247,6 +247,7 @@ h3 {
     border-radius: 50px;
     font-size: 35px;
     position: absolute;
+    transition: 0.2s;
 }
 .contact-me .custom-contact a:hover {
     transition: 0.2s;
